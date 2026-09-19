@@ -221,13 +221,89 @@ textarea{
     border-radius: 1rem;
     background: #a0f3;
     color: #a0f;
-}.profile-dropdown{
+}
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+.profile-btn {
     display: flex;
-    place-items: center;
-    justify-content: end;
+    align-items: center;
     gap: 8px;
-    padding: 10px 20px;
+    padding: 5px 14px 5px 5px;
+    background: #a0f3;
     border: 2px solid #a0f;
     border-radius: 30px;
+    color: #000;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.profile-btn:hover {
+    background: #a0f;
+    color: #fff;
+}
+.profile-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #a0f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 230px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 200;
+}
+.profile-dropdown.active {
+    display: block;
+}
+.dropdown-header {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 6px;
+}
+.user-email {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dropdown-item {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #222;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.dropdown-item:hover {
     background: #a0f3;
-}.dropdown-item{display: block; place-items: center;}
+    color: #a0f;
+}
+.dropdown-item.sign-out {
+    color: #c00;
+}
+.dropdown-item.sign-out:hover {
+    background: #fdd;
+    color: #c00;
+}
