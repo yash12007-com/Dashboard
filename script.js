@@ -114,7 +114,7 @@ let currentActiveProject = null;
 // Render request form or login prompt
 if(user != null){
     document.getElementById("suggestActionHome").innerHTML = `
-        <p>Describe your software needs. Nvidia Nemotron will draft your architecture and compile a sandbox prototype.</p>
+        <p>Describe your software needs. Our autonomous system will draft your architecture and compile a sandbox prototype.</p>
         <form id="projectRequestForm">
             <label for="projectDesc">Project Specifications & Features</label>
             <textarea id="projectDesc" name="projectDesc" required placeholder="Describe target platform (Linux binary, CLI tool, API), core UI components, business logic, and behavior..."></textarea>
