@@ -221,4 +221,13 @@ textarea{
     border-radius: 1rem;
     background: #a0f3;
     color: #a0f;
+}.profile-dropdown{
+    display: flex;
+    place-items: center;
+    justify-content: end;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 2px solid #a0f;
+    border-radius: 30px;
+    background: #a0f3;
 }
