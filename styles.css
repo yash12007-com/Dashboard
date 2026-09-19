@@ -230,4 +230,4 @@ textarea{
     border: 2px solid #a0f;
     border-radius: 30px;
     background: #a0f3;
-}
+}.dropdown-item{display: block; place-items: center;}
