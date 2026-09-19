@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <title>Dashboard - Yash12007 | Software development company</title>
+    <link rel="shortcut icon" href="https://www.yash12007.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+</head>
+<body>
+    <nav>
+        <div style="display: flex; place-items: center; justify-content: start; gap: 8px;">
+            <img src="https://www.yash12007.com/192x192.png" alt="Yash12007 Logo" width="40" height="40" style="border-radius: 10px; box-shadow: 0 0 20px 1px #2223;">
+            <span>Dashboard</span>
+        </div>
+        <div id="authActions"></div>
+    </nav>
+    <main id="main">
+        <div class="note">This website is under development, releases announcements will broadcast soon!</div>
+        <h1 id="greetings"></h1>
+        <div id="suggestActionHome"></div>
+    </main>
+    <div id="slider">
+        <button class="slider-btn" onclick="window.open('https://dashboard.yash12007.com', '_self')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+            <span class="btn-text">Home</span>
+        </button>
+        <button class="slider-btn" onclick="window.open('https://store.yash12007.com', '_blank')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+            <span class="btn-text">Products</span>
+        </button>
+        <button class="slider-btn" onclick="window.open('https://www.yash12007.com/services', '_blank')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m352-522 86-87-56-57-44 44-56-56 43-44-45-45-87 87 159 158Zm328 329 87-87-45-45-44 43-56-56 43-44-57-56-86 86 158 159Zm24-567 57 57-57-57ZM290-120H120v-170l175-175L80-680l200-200 216 216 151-152q12-12 27-18t31-6q16 0 31 6t27 18l53 54q12 12 18 27t6 31q0 16-6 30.5T816-647L665-495l215 215L680-80 465-295 290-120Zm-90-80h56l392-391-57-57-391 392v56Zm420-419-29-29 57 57-28-28Z"/></svg>
+            <span class="btn-text">Services</span>
+        </button>
+        <button class="slider-btn" onclick="window.open('https://api.yash12007.com', '_blank')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-400-80-80 80-80 80 80-80 80Zm-85-235L295-735l185-185 185 185-100 100-85-85-85 85ZM225-295 40-480l185-185 100 100-85 85 85 85-100 100Zm510 0L635-395l85-85-85-85 100-100 185 185-185 185ZM480-40 295-225l100-100 85 85 85-85 100 100L480-40Z"/></svg>
+            <span class="btn-text">API</span>
+        </button>
+        <button class="slider-btn" onclick="alert('Page is in development...')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-340q33 0 56.5-23.5T560-420q0-33-23.5-56.5T480-500q-33 0-56.5 23.5T400-420q0 33 23.5 56.5T480-340ZM160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"/></svg>
+            <span class="btn-text">Enterprise</span>
+        </button>
+        <button class="slider-btn" onclick="alert('page is in development...')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-120v-720h400v160h400v560H80Zm80-80h240v-80H160v80Zm0-160h240v-80H160v80Zm0-160h240v-80H160v80Zm0-160h240v-80H160v80Zm320 480h320v-400H480v400Zm80-240v-80h160v80H560Zm0 160v-80h160v80H560Z"/></svg>
+            <span class="btn-text">Organisation</span>
+        </button>
+        <button class="slider-btn" onclick="account()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm100-95.5q47-15.5 86-44.5-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160q53 0 100-15.5ZM523-537q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm-43-43Zm0 360Z"/></svg>
+            <span class="btn-text">Account</span>
+        </button>
+        <div style="width: 100%; position: absolute; bottom: 20px; border-top: 1px solid #fff3;">
+            <button class="slider-btn" id="collapseToggleBtn" onclick="CollapseSlider()">
+                <svg id="collapseIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" style="transition: transform 0.3s ease;">
+                    <path d="M440-280v-400L240-480l200 200Zm80 160h80v-720h-80v720Z"/>
+                </svg>
+                <span class="btn-text" id="collapseLabel">Collapse</span>
+            </button>
+        </div>
+    </div>
+    <!-- Yash12007 Sandboxed Prototype Viewer Modal -->
+    <div id="prototypeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span style="font-weight: 700; font-size: 0.95rem;">🛡️ Yash12007 Test Runner (Sandboxed UI Preview)</span>
+                <button onclick="closePrototypeModal()" style="background: none; border: none; color: #fff; font-size: 1.3rem; cursor: pointer;">&times;</button>
+            </div>
+            <iframe id="prototypeFrame" class="modal-iframe" sandbox="allow-scripts allow-forms"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
