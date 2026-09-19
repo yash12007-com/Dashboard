@@ -130,7 +130,7 @@ if(user != null){
         const responseArea = document.getElementById("projectResponseArea");
 
         btn.disabled = true;
-        btn.innerText = "Synthesizing Architecture with Nemotron AI...";
+        btn.innerText = "Synthesizing Architecture with AI...";
         responseArea.innerHTML = "";
 
         try {
@@ -154,7 +154,7 @@ if(user != null){
             console.error("Submission failed:", error);
             responseArea.innerHTML = `
                 <div style="color: #c00; margin-top: 15px; text-align: center;">
-                    Failed to generate estimate from <code>vm.yash12007.com</code>. Check server status and OpenRouter credentials.
+                    Failed to generate estimate from <code>vm.yash12007.com</code>. Check server status and credentials.
                 </div>
             `;
         } finally {
@@ -233,8 +233,6 @@ function closePrototypeModal() {
     frame.src = "about:blank";
     modal.style.display = "none";
 }
-
-// Submit revisions to Nemotron
 async function submitRevision(projectId) {
     const revInput = document.getElementById("revisionDesc");
     const revBtn = document.getElementById("revBtn");
