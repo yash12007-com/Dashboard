@@ -1,7 +1,7 @@
 const API_BASE_URL = "https://vm.yash12007.com";
 
 (function() {
-    const AUTH_URL = "https://auth.yash12007.com?origin=https://www.yash12007.com&redirect=https://www.yash12007.com";
+    const AUTH_URL = "https://auth.yash12007.com?origin=https://www.yash12007.com&redirect=https://dashboard.yash12007.com";
     const authContainer = document.getElementById('authActions');
     const STORAGE_KEY = 'yash12007_auth_user';
     const params = new URLSearchParams(window.location.search);
