@@ -225,6 +225,9 @@ function openPrototypeModal(url) {
     const frame = document.getElementById("prototypeFrame");
     frame.src = url;
     modal.style.display = "flex";
+    setTimeout(()=>{if(confirm("Is the UI visible? if not please let us know by confirming this message else ignore it") == true){
+        window.open(url, '_blank');
+    }}, 3000);
 }
 
 function closePrototypeModal() {
